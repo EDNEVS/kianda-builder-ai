@@ -1,0 +1,61 @@
+{
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "external_link": {
+      "type": "string"
+    },
+    "features_activated": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "name": {
+      "type": "string"
+    },
+    "project_type": {
+      "enum": [
+        "Website",
+        "Web App",
+        "PWA",
+        "ERP",
+        "CRM",
+        "HR",
+        "Accounting",
+        "Invoicing",
+        "SaaS",
+        "API",
+        "Automation",
+        "E-commerce",
+        "Other"
+      ],
+      "type": "string"
+    },
+    "specifications": {
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "Spec",
+        "Building",
+        "Testing",
+        "Published",
+        "Paused",
+        "Completed"
+      ],
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "project_type",
+    "status"
+  ],
+  "type": "object",
+  "name": "Project"
+}
