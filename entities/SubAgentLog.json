@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "agent_name": {
+      "type": "string"
+    },
+    "completed_at": {
+      "type": "string"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "result_summary": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "Pending",
+        "In Progress",
+        "Completed",
+        "Failed"
+      ],
+      "type": "string"
+    },
+    "task_description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "agent_name",
+    "task_description",
+    "status"
+  ],
+  "type": "object",
+  "name": "SubAgentLog"
+}
