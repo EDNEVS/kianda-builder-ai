@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "active_features": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "description": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "schema_definition": {
+      "type": "object"
+    },
+    "system_type": {
+      "enum": [
+        "HR",
+        "Accounting",
+        "Tax",
+        "Audit",
+        "Logistics",
+        "Procurement",
+        "Inventory",
+        "Legal",
+        "BI",
+        "CRM",
+        "ERP",
+        "Invoicing",
+        "E-commerce"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "system_type"
+  ],
+  "type": "object",
+  "name": "ModuleTemplate"
+}
